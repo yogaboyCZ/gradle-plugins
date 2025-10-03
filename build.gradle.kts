@@ -23,5 +23,9 @@ gradlePlugin {
             id = "cz.yogaboy.android-library"
             implementationClass = "cz.yogaboy.build.AndroidLibraryConventionPlugin"
         }
+        create("composeConventions") {
+            id = "cz.yogaboy.compose-conventions"
+            implementationClass = "cz.yogaboy.build.ComposeConventionsPlugin"
+        }
     }
 }
