@@ -9,8 +9,10 @@ import org.gradle.kotlin.dsl.configure
 class AndroidLibraryConventionPlugin : Plugin<Project> {
     override fun apply(target: Project) {
         target.pluginManager.apply("com.android.library")
+        target.pluginManager.apply("org.jetbrains.kotlin.plugin.serialization")
+
         target.extensions.configure<LibraryExtension> {
-            compileSdk = 35
+            compileSdk = 36
             defaultConfig {
                 minSdk = 28
             }
